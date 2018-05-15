@@ -1,0 +1,24 @@
+{% extends 'hsbus/layout.html' %}
+
+
+{% block subtitle %}
+버스 정차 준수율
+{% endblock %}
+
+{% block tag %} 버스 운행 현황 분석 / 버스 정차 준수율{% endblock %}
+
+{% block content %}
+<div class="explain" >
+  <h1 align='center' style='color:red'>노선별/정류장별 버스 정차 준수율 모니터링</h1>
+  <hr color="black" height="500px">
+  <P style='color:black; margin-left:17%'>
+    히트맵(Heat Map)과 막대그래프를 활용한 노선별/정류장별
+    버스 정차 준수율 및 무정차 횟수 모니터링 페이지입니다.<br/>
+    히트맵 색깔이 붉은색에 가까울수록 상대적으로 정차 준수율이 낮습니다.<br/>
+    막대그래프를 통해 무정차 횟수를 파악할 수 있습니다.
+
+  </p>
+</div>
+<br/>
+<div class='tableauPlaceholder' style='width: 1004px; height: 836px; margin:auto'><object class='tableauViz' width='1004' height='836' style='display:none;'><param name='host_url' value='http%3A%2F%2F1.246.219.220%2F' /> <param name='site_root' value='' /><param name='name' value='ITRC_10_3____&#47;itrc__6' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+{% endblock %}

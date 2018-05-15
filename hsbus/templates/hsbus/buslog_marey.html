@@ -1,0 +1,33 @@
+{% extends 'hsbus/layout.html' %}
+
+
+{% block subtitle %}
+버스 운행 모니터링
+{% endblock %}
+
+{% block tag %} 버스 운행 현황 분석 / 버스 운행 모니터링 {% endblock %}
+
+{% block content %}
+<div class="explain" >
+  <h1 align='center' style='color:red'>Marey 그래프를 활용한 버스 운행 상황 모니터링</h1>
+  <hr color="black" height="500px">
+  <P style='color:black; margin-left:17%'>
+    Marey 그래프를 활용한 버스 운행 상황 모니터링 페이지 입니다.<br/>
+    x축은 버스 정차 시간, y축은 정류장 순번에 해당합니다.<br/>
+    이 그래프를 통해 각 노선별로 버스의 실제 정차 시간, 무정차 통과,
+    결행, 노선 이탈, 도중 회차, 배차 간격, 도착 지연 등을 알 수 있습니다.
+
+  </p>
+</div>
+<br/>
+<div class='tableauPlaceholder' style='width: 1004px; height: 836px; margin: auto'>
+  <object class='tableauViz' width='1004' height='836' style='display:none;'>
+    <param name='host_url' value='http%3A%2F%2F1.246.219.220%2F' />
+    <param name='site_root' value='' />
+    <param name='name' value='ITRC_10_3____&#47;itrc_Marey_ver_2' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='showAppBanner' value='false' />
+  </object>
+</div>
+{% endblock %}

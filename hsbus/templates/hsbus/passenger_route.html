@@ -1,0 +1,21 @@
+{% extends 'hsbus/layout.html' %}
+
+{% block subtitle %}
+노선별 승객 수 추이
+{% endblock %}
+
+{% block tag %} 버스 승객 분석 / 노선별 승객 수 추이 {% endblock %}
+
+{% block content %}
+<div class="explain" >
+  <h1 align='center' style='color:red'>버스 노선별 승객수 추이 모니터링</h1>
+  <hr color="black" height="500px">
+  <P style='color:black; margin-left:17%'>
+    막대그래프와 꺾은선 그래프를 활용한 버느 노선별 승객수 추이 모니터링 페이지입니다.<br/>
+    막대그래프에서 파란색 부분은 총 이용객수이고, 주황색 부분은 출퇴근 이용객수입니다.<br/>
+    막대그래프와 연동하여 해당 노선의 요일별 승객수를 꺾은선 그래프를 시각화했습니다.<br/>
+  </p>
+</div>
+<br/>
+<div class='tableauPlaceholder' style='width: 1004px; height: 836px; margin: auto;'><object class='tableauViz' width='1004' height='836' style='display:none;'><param name='host_url' value='http%3A%2F%2F1.246.219.220%2F' /> <param name='site_root' value='' /><param name='name' value='ITRC_10_3&#47;sheet4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+{% endblock %}

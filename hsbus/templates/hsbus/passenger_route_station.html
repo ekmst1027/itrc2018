@@ -1,0 +1,20 @@
+{% extends 'hsbus/layout.html' %}
+
+{% block subtitle %}
+노선별 정류장별 승하차 승객 수
+{% endblock %}
+
+{% block tag %} 버스 승객 분석 / 노선별 정류장별 승하차 승객 수 {% endblock %}
+
+{% block content %}
+<div class="explain" >
+  <h1 align='center' style='color:red'>노선별 정류장별 승하차 승객수 모니터링</h1>
+  <hr color="black" height="500px">
+  <P style='color:black; margin-left:17%'>
+    막대그래프를 활용한 노선별 정류장별 승하차 승객수 추이 모니터링 페이지입니다. <br/>
+    막대그래프를 통해 각 정류장별로 승하차 승객수를 시각화했습니다.<br/>
+  </p>
+</div>
+<br/>
+<div class='tableauPlaceholder' style='width: 1004px; height: 836px; margin: auto;'><object class='tableauViz' width='1004' height='836' style='display:none;'><param name='host_url' value='http%3A%2F%2F1.246.219.220%2F' /> <param name='site_root' value='' /><param name='name' value='ITRC_10_3&#47;sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+{% endblock %}
